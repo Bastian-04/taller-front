@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="description" content="Bootstrap Admin App">
+   <meta name="keywords" content="app, responsive, jquery, bootstrap, dashboard, admin">
+   <link rel="icon" type="image/x-icon" href="favicon.ico">
+   <title>Angle - Bootstrap Admin Template</title><!-- =============== VENDOR STYLES ===============-->
+   <!-- FONT AWESOME-->
+   <link rel="stylesheet" href="vendor/@fortawesome/fontawesome-free/css/brands.css">
+   <link rel="stylesheet" href="vendor/@fortawesome/fontawesome-free/css/regular.css">
+   <link rel="stylesheet" href="vendor/@fortawesome/fontawesome-free/css/solid.css">
+   <link rel="stylesheet" href="vendor/@fortawesome/fontawesome-free/css/fontawesome.css"><!-- SIMPLE LINE ICONS-->
+   <link rel="stylesheet" href="vendor/simple-line-icons/css/simple-line-icons.css"><!-- ANIMATE.CSS-->
+   <link rel="stylesheet" href="vendor/animate.css/animate.css"><!-- WHIRL (spinners)-->
+   <link rel="stylesheet" href="vendor/whirl/dist/whirl.css"><!-- =============== PAGE VENDOR STYLES ===============-->
+   <!-- =============== BOOTSTRAP STYLES ===============-->
+   <link rel="stylesheet" href="css/bootstrap.css" id="bscss"><!-- =============== APP STYLES ===============-->
+   <link rel="stylesheet" href="css/app.css" id="maincss">
+</head>
+
+<body>
+   <div class="wrapper">
+      <!-- top navbar-->
+      <header class="topnavbar-wrapper">
+         <!-- START Top Navbar-->
+         <nav class="navbar topnavbar">
+            <!-- START navbar header-->
+            <div class="navbar-header"><a class="navbar-brand" href="#/">
+                  <div class="brand-logo"><img class="img-fluid" src="img/logo.png" alt="App Logo"></div>
+                  <div class="brand-logo-collapsed"><img class="img-fluid" src="img/logo-single.png" alt="App Logo"></div>
+               </a></div><!-- END navbar header-->
+            <!-- START Left navbar-->
+            <ul class="navbar-nav mr-auto flex-row">
+               <li class="nav-item">
+                  <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops--><a class="nav-link d-none d-md-block d-lg-block d-xl-block" href="#" data-trigger-resize="" data-toggle-state="aside-collapsed"><em class="fas fa-bars"></em></a><!-- Button to show/hide the sidebar on mobile. Visible on mobile only.--><a class="nav-link sidebar-toggle d-md-none" href="#" data-toggle-state="aside-toggled" data-no-persist="true"><em class="fas fa-bars"></em></a></li><!-- START User avatar toggle-->
+               <li class="nav-item d-none d-md-block">
+                  <!-- Button used to collapse the left sidebar. Only visible on tablet and desktops--><a class="nav-link" id="user-block-toggle" href="#user-block" data-toggle="collapse"><em class="icon-user"></em></a></li><!-- END User avatar toggle-->
+               <!-- START lock screen-->
+              
+            <!-- START Right Navbar-->
+            <ul class="navbar-nav flex-row">
+               <!-- Search icon-->
+               <!-- Fullscreen (only desktops)-->
+               
+               <!-- START Alert menu-->
+               
+                  <!-- START Dropdown menu-->
+                  <div class="dropdown-menu dropdown-menu-right animated flipInX">
+                     <div class="dropdown-item">
+                        <!-- START list group-->
+                        <div class="list-group">
+                           <!-- list item-->
+                           <div class="list-group-item list-group-item-action">
+                              <div class="media">
+                                 <div class="align-self-start mr-2"><em class="fab fa-twitter fa-2x text-info"></em></div>
+                                 <div class="media-body">
+                                    <p class="m-0">New followers</p>
+                                    <p class="m-0 text-muted text-sm">1 new follower</p>
+                                 </div>
+                              </div>
+                           </div><!-- list item-->
+                           <div class="list-group-item list-group-item-action">
+                              <div class="media">
+                                 <div class="align-self-start mr-2"><em class="fas fa-envelope fa-2x text-warning"></em></div>
+                                 <div class="media-body">
+                                    <p class="m-0">New e-mails</p>
+                                    <p class="m-0 text-muted text-sm">You have 10 new emails</p>
+                                 </div>
+                              </div>
+                           </div><!-- list item-->
+                           <div class="list-group-item list-group-item-action">
+                              <div class="media">
+                                 <div class="align-self-start mr-2"><em class="fas fa-tasks fa-2x text-success"></em></div>
+                                 <div class="media-body">
+                                    <p class="m-0">Pending Tasks</p>
+                                    <p class="m-0 text-muted text-sm">11 pending task</p>
+                                 </div>
+                              </div>
+                           </div><!-- last list item-->
+                           <div class="list-group-item list-group-item-action"><span class="d-flex align-items-center"><span class="text-sm">More notifications</span><span class="badge badge-danger ml-auto">14</span></span></div>
+                        </div><!-- END list group-->
+                     </div>
+                  </div><!-- END Dropdown menu-->
+               </li><!-- END Alert menu-->
+               <!-- START Offsidebar button-->
+               
+               <!-- END Offsidebar menu-->
+            </ul><!-- END Right Navbar-->
+            <!-- START Search form-->
+            <form class="navbar-form" role="search" action="search.html">
+               <div class="form-group"><input class="form-control" type="text" placeholder="Type and hit enter ...">
+                  <div class="fas fa-times navbar-form-close" data-search-dismiss=""></div>
+               </div><button class="d-none" type="submit">Submit</button>
+            </form><!-- END Search form-->
+         </nav><!-- END Top Navbar-->
+      </header><!-- sidebar-->
+      <aside class="aside-container">
+         <!-- START Sidebar (left)-->
+         <div class="aside-inner">
+            <nav class="sidebar" data-sidebar-anyclick-close="">
+               <!-- START sidebar nav-->
+               <ul class="sidebar-nav">
+                  <!-- START user info-->
+                  <li class="has-user-block">
+                     <div class="collapse" id="user-block">
+                        <div class="item user-block">
+                           <!-- User picture-->
+                           <div class="user-block-picture">
+                              <div class="user-block-status"><img class="img-thumbnail rounded-circle" src="img/user/02.jpg" alt="Avatar" width="60" height="60">
+                                 <div class="circle bg-success circle-lg"></div>
+                              </div>
+                           </div><!-- Name and Job-->
+                           <div class="user-block-info"><span class="user-block-name">Hello, Mike</span><span class="user-block-role">Designer</span></div>
+                        </div>
+                     </div>
+                  </li><!-- END user info-->
+                  <!-- Iterates over all sidebar items-->
+                  <li class="nav-heading "><span data-localize="sidebar.heading.HEADER">Menu Navigation</span></li>
+                  <li class=""><a href="vista_ordenes.html" title="Ordenes"><em class="far fa-file"></em><span>Ordenes</span></a></li>
+                  <li class=""><a href="vista_clientes.html" title="Clientes"><em class="fa fa-user"></em><span>Clientes</span></a></li>
+                  <li class="active"><a href="vista_repuestos.html" title="Repuestos"><em class="fa fa-wrench"></em><span>Repuestos</span></a></li>
+                  <li class=""><a href="vista_vehiculos.html" title="Vehiculos"><em class="fa fa-car"></em><span>Vehículos</span></a></li>
+               </ul><!-- END sidebar nav-->
+            </nav>
+         </div><!-- END Sidebar (left)-->
+      </aside><!-- offsidebar-->
+      <section class="section-container">
+         <!-- Page content-->
+         <div class="content-wrapper">
+            <div class="content-heading">
+               <div>Repuestos<small>Surtido variado de marcas.</small></div>
+            </div>
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="card card-default">
+                     <div class="card-header">
+                        <a href="nuevo_repuesto.html" class="btn btn-success">Añadir nuevo repuesto</a>
+                     </div>
+                     <div class="card-body">
+                         <!-- START table-responsive-->
+                         <div class="table-responsive">
+                             <table id="repuestosTable" class="table table-striped table-bordered table-hover">
+                                 <thead>
+                                     <tr>
+                                         <th>Codigo</th>
+                                         <th>Descripción</th>
+                                         <th>Cantidad</th>
+                                         <th>Precio</th>
+                                         <th>Fecha</th>
+                                         <th></th>
+                                     </tr>
+                                 </thead>
+                                 <tbody>
+                                 </tbody>
+                             </table>
+                         </div><!-- END table-responsive-->
+                     </div>
+                 </div>
+               </div>
+            </div>
+         </div>
+      </section><!-- Page footer-->
+      <footer class="footer-container"><span>&copy; 2019 - Angle</span></footer>
+   </div><!-- =============== VENDOR SCRIPTS ===============-->
+   <!-- MODERNIZR-->
+   <script src="vendor/jquery/dist/jquery.js"></script>
+   <script src="vendor/modernizr/modernizr.custom.js"></script><!-- STORAGE API-->
+   <script src="vendor/js-storage/js.storage.js"></script><!-- SCREENFULL-->
+   <script src="vendor/screenfull/dist/screenfull.js"></script><!-- i18next-->
+   <script src="vendor/i18next/i18next.js"></script>
+   <script src="vendor/i18next-xhr-backend/i18nextXHRBackend.js"></script><!-- =============== PAGE VENDOR SCRIPTS ===============-->
+   <!-- =============== APP SCRIPTS ===============-->
+   <script src="js/app.js"></script>
+   
+
+   <!-- Metodo JSON para recuperar, mostrar y llenar una tabla con datos desde el backend [PHP/Slim], 
+   para el metodo GET llamando los endpoints creados y corroborados en POSTMAN -->
+   <script type="text/javascript">
+      $(document).ready(function () {
+         $.ajax({
+            method: "GET",
+            url: "http://localhost:80/taller-api/public/repuestos",
+            dataType: "script"
+         }).done(function (data) {
+            var obj = JSON.parse(data);
+            console.log(obj);
+            obj.forEach(element => {
+               $("#repuestosTable tbody").append(
+                  "<tr>" +
+                  `<td>${element.id_repuesto}</td>` +
+                  `<td>${element.descripcion}</td>` +
+                  `<td>${element.cantidad}</td>` +
+                  `<td>${element.precio_venta}</td>` +
+                  `<td>${element.fecha_compra}</td>` +
+                  `<td><a href="nuevo_repuesto.html?id=${element.id_repuesto}" class="btn btn-xs btn-warning">Editar</a></td>` +
+                  "</tr>"
+               );
+            });
+         });
+      });      
+   </script>
+</body>
+
+</html>
